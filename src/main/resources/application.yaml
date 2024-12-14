@@ -1,5 +1,5 @@
 api:
-  config: /home/eduard/Рабочий стол/projects/bybit-trading-bot/bybit-trading-bot/api.yaml
+  config: /home/eduard/Рабочий стол/projects/bybit-trading-bot/api.yaml
 
 logging:
   level:
