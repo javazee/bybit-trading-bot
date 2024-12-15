@@ -11,4 +11,25 @@
     <packaging>jar</packaging>
     <name>indicators</name>
 
+    <properties>
+        <trading-utils.version>1.0</trading-utils.version>
+        <junit.version>5.11.3</junit.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.trading.bybit</groupId>
+            <artifactId>trading-utils</artifactId>
+            <version>${trading-utils.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 </project>

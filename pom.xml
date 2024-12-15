@@ -17,6 +17,7 @@
         <module>indicators</module>
         <module>trading-core</module>
         <module>strategies</module>
+        <module>trading-utils</module>
     </modules>
 
     <properties>
