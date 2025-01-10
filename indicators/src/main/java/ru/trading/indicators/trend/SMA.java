@@ -9,8 +9,8 @@ public class SMA implements TrendIndicator {
     private final int period;
     private final Stack<Double> priceStack;
 
-    private double previousAverage;
-    private double average;
+    private Double previousAverage;
+    private Double average;
 
     public SMA(final int period) {
         this.period = period;
@@ -40,7 +40,8 @@ public class SMA implements TrendIndicator {
         this.average = sum/this.period;
     }
 
-    public void add(Double price) {
+    @Override
+    public void addPrice(Double price) {
         this.priceStack.push(price);
         if (this.priceStack.size() < this.period) {
             return;

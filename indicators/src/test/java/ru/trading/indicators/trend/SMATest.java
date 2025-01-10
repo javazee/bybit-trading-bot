@@ -17,15 +17,15 @@ class SMATest {
         Assertions.assertEquals(TrendDirection.UP, sma.getTrendDirection());
         Assertions.assertEquals(15, sma.getValue());
 
-        sma.add(4d);
+        sma.addPrice(4d);
         Assertions.assertEquals(13d, sma.getValue());
         Assertions.assertEquals(TrendDirection.DOWN, sma.getTrendDirection());
 
-        sma.add(6d);
+        sma.addPrice(6d);
         Assertions.assertEquals(10d, sma.getValue());
         Assertions.assertEquals(TrendDirection.DOWN, sma.getTrendDirection());
 
-        sma.add(35d);
+        sma.addPrice(35d);
         Assertions.assertEquals(15d, sma.getValue());
         Assertions.assertEquals(TrendDirection.UP, sma.getTrendDirection());
 
@@ -33,7 +33,7 @@ class SMATest {
         Assertions.assertEquals(TrendDirection.UP, sma.getTrendDirection());
         Assertions.assertEquals(15, sma.getValue());
 
-        sma.add(10d);
+        sma.addPrice(10d);
         Assertions.assertEquals(TrendDirection.SIDEWAYS, sma.getTrendDirection());
         Assertions.assertEquals(15, sma.getValue());
 

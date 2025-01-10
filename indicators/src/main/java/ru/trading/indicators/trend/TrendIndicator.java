@@ -8,5 +8,7 @@ public interface TrendIndicator extends Indicator {
 
     void calculate(List<Double> prices);
 
+    void addPrice(Double price);
+
     TrendDirection getTrendDirection();
 }
